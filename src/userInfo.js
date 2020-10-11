@@ -1,4 +1,4 @@
-class UserInfo {
+export default class UserInfo {
 	constructor(nameContainer,jobContainer,logoContainer) {
 		this.nameContainer = nameContainer;
 	this.logoContainer = logoContainer;
