@@ -1,8 +1,7 @@
 
 # Mesto-Project
 Yandex.Praktikum   
-*Версия 1.0.0*    
-https://zaurnatok.github.io/mesto_project/
+
 ____
 Этот проект создан для демонстрации навыков, полученных в ходе обучения на проекте Яндекс.Практикум.    
 
