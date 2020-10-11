@@ -5,12 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Mesto</title>
-  <link rel="stylesheet" href="./pages/index.css">
+  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css %>">
 </head>
 <body>
   <div class="root">
     <header class="header root__section">
-      <img src="./images/logo.svg" alt="mesto logo" class="logo">
+      <img src ="<%=require('./images/logo.svg').default%>" alt="mesto logo" class="logo">
     </header>
     <div class="profile root__section">
       <div class="user-info">
@@ -21,7 +21,7 @@
           <button class="button user-info__button_edit">Edit</button>
         </div>
            
-      
+        
         <button class="button user-info__button_add">+</button>
       </div>
     </div>
@@ -39,7 +39,7 @@
       
       <div class="popup__content">
        
-        <img src="./images/close.svg" alt="" class="popup__close">
+        <img src="<%=require('./images/close.svg').default%>""  class="popup__close">
           <!--форма редактировать профмль-->
         <h3 class="popup__title">Новое место</h3>
         <form class="popup__form" name="new" novalidate>
@@ -59,7 +59,7 @@
   <div class="popup popup-edit">
       
     <div class="popup-edit__content">
-      <img src="./images/close.svg" alt="" class="popup-edit__close">
+      <img src="<%=require('./images/close.svg').default%>" alt="" class="popup-edit__close">
           <!--форма редактировать профиль-->
           <h3 class="popup-edit__title">Редактировать профиль</h3>
        <form class="popup__form" name="user" novalidate>
@@ -78,25 +78,10 @@
   
   <div class="popup popup-image">
     <div class="popup-image__content">
-      <img src="./images/close.svg" alt="" class="popup__close-image">
+      <img src ="<%=require('./images/close.svg').default%>"  alt="" class="popup__close-image">
     </div>
   </div>
 </div>
-<script src ="./script/Api.js"></script>
-  <script src ="./script/data.js"></script> 
-  <script src ="./script/card.js"></script> 
-  <script src ="./script/Cardlist.js"></script> 
-  <script src ="./script/userInfo.js"></script>
-  <script src ="./script/formValidator.js"></script>
-  <script src ="./script/popup.js"></script> 
-  <script src="./script/main.js"> </script>
-
-
-
-   
-     
-   
-   
-     
+<script src="<%= htmlWebpackPlugin.files.js %>"></script>
 </body>
 </html>

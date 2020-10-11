@@ -1,3 +1,13 @@
+
+import Api from './Api.js';
+import Cardlist from './Cardlist.js';
+import FormValidator from './formValidator.js';
+import Popup from './popup.js';
+import UserInfo from './userInfo.js';
+import Card from './card.js';
+import  './pages/style.css';
+
+
 const formAddCard = document.forms.new;
 const formProfil = document.forms.user; // formProfile
 const inputUs = formProfil.elements.name;
