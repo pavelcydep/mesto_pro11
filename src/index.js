@@ -5,6 +5,7 @@ import FormValidator from './formValidator.js';
 import Popup from './popup.js';
 import UserInfo from './userInfo.js';
 import Card from './card.js';
+
 import  './pages/style.css';
 
 
@@ -33,11 +34,13 @@ const popupFormAdd = document.querySelector('.popup__form'); // Можно лу�
 const postBtn = document.querySelector('.popup__button');
 
 
+
+
+const serverUrl = NODE_ENV === 'development' ? 'http://nomoreparties.co' : 'https://nomoreparties.co';
 const api = new Api({
-	url:'https://nomoreparties.co',
+	url:serverUrl ,
 	token:'039c48d9-9447-48a5-823a-6960817e2381'}
 	);
-
 /*
 	Можно лучше: запрос карточек делается в классе Cardlist
 	Получается этот запрос не нужен
