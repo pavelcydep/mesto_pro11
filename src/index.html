@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mesto</title>
+  <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css %>">
+</head>
+<body>
+  <div class="root">
+    <header class="header root__section">
+      <img src ="<%=require('./images/logo.svg').default%>" alt="mesto logo" class="logo">
+    </header>
+    <div class="profile root__section">
+      <div class="user-info">
+        <div class="user-info__photo"></div>
+        <div class="user-info__data">
+          <h1 class="user-info__name"></h1>
+          <p class="user-info__job"></p>
+          <button class="button user-info__button_edit">Edit</button>
+        </div>
+           
+        
+        <button class="button user-info__button_add">+</button>
+      </div>
+    </div>
+    <div class="places-list root__section">
+      
+      
+
+ 
+  
+ 
+    </div>
+    <!-- Надо исправить: Дублирование кода - попап с картинкой должен использовать блок с классом popup -->
+   
+    <div class="popup">
+      
+      <div class="popup__content">
+       
+        <img src ="<%=require('./images/logo.svg').default%>"  class="popup__close">
+          <!--форма редактировать профмль-->
+        <h3 class="popup__title">Новое место</h3>
+        <form class="popup__form" name="new" novalidate>
+          <!-- Надо исправить: ID name-card не должен использоваться повторно -->
+          <input type="text" id="name-card" name="name" class="popup__input popup__input_type_name" minlength="2" maxlength="30" required placeholder="Название">
+          <!-- Надо исправить: ID name-card-error не должен использоваться повторно -->
+          <span id="name-card-error" class="error"></span>
+          <!-- Надо исправить: ID link не должен использоваться повторно -->
+          <input type="url" id="link" name="link" class="popup__input popup__input_type_link-url" minlength="2" required placeholder="Ссылка на картинку">
+          <!-- Надо исправить: ID link-error не должен использоваться повторно -->
+          <span id="link-error" class="error"></span>
+          <button type="submit" class="button popup__button  popup__button_valid" >+</button>
+      </form>
+    </div>
+    
+  </div>
+  <div class="popup popup-edit">
+      
+    <div class="popup-edit__content">
+      <img src="./images/close.svg" alt="" class="popup-edit__close">
+          <!--форма редактировать профиль-->
+          <h3 class="popup-edit__title">Редактировать профиль</h3>
+       <form class="popup__form" name="user" novalidate>
+          <input type="text" id="user" name="name" class="popup__input popup__input_type_name" minlength="2" maxlength="30" required value="Jaques Causteau">
+          <span id="user-error" class="error"></span>
+          <input type="text" id="job" name="link" class="popup__input popup__input_type_link-url" minlength="2" required value="Sailor, Researcher">
+          <span id="job-error" class="error"></span>
+          <button type="submit" class="button popup__button popup__button_valid" >Добавить</button>
+      </form>
+    </div>
+    
+  </div>
+  
+    
+    
+  
+  <div class="popup popup-image">
+    <div class="popup-image__content">
+      <img src ="<%=require('./images/close.svg').default%>"  alt="" class="popup__close-image">
+    </div>
+  </div>
+</div>
+<script src="<%= htmlWebpackPlugin.files.js %>"></script>
+</body>
+</html>
