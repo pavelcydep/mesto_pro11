@@ -33,6 +33,9 @@ const closeImageButton = document.querySelector('.popup__close-image');
 const popupFormAdd = document.querySelector('.popup__form'); // Можно лучше: использовать или удалить неиспользуемую переменную
 const postBtn = document.querySelector('.popup__button');
 const serverUrl = NODE_ENV === 'development' ? 'http://nomoreparties.co' : 'https://nomoreparties.co';
+
+
+
 const api = new Api({
 	url:serverUrl ,
 	token:'039c48d9-9447-48a5-823a-6960817e2381'}
