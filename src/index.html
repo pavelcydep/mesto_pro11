@@ -39,8 +39,8 @@
       
       <div class="popup__content">
        
-  <img src="<%=require('./images/close.svg').default%>""  class="popup__close">
-        <!--форма редактировать профмль-->
+        <img src="<%=require('./images/close.svg').default%>""  class="popup__close">
+          <!--форма редактировать профмль-->
         <h3 class="popup__title">Новое место</h3>
         <form class="popup__form" name="new" novalidate>
           <!-- Надо исправить: ID name-card не должен использоваться повторно -->
@@ -59,7 +59,7 @@
   <div class="popup popup-edit">
       
     <div class="popup-edit__content">
-      <img src="./images/close.svg" alt="" class="popup-edit__close">
+      <img src="<%=require('./images/close.svg').default%>" alt="" class="popup-edit__close">
           <!--форма редактировать профиль-->
           <h3 class="popup-edit__title">Редактировать профиль</h3>
        <form class="popup__form" name="user" novalidate>
@@ -85,3 +85,4 @@
 <script src="<%= htmlWebpackPlugin.files.js %>"></script>
 </body>
 </html>
+
