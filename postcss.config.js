@@ -6,4 +6,4 @@ module.exports = {
           preset: 'default', // выбрали настройки по умолчанию
   })
 ]
-} 
+}
