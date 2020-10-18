@@ -49,8 +49,7 @@ module.exports = {
                 },
         ]
  }
-
-    ]
+]
   },
   plugins: [
     new MiniCssExtractPlugin({ // 
