@@ -11,7 +11,7 @@
 @import url(../blocks/popup-image/popup-image.css);
 @import url(../blocks/popup-edit/popup-edit.css);
 
-@import url(./error/error.css);
+
 body {
   background-color: #000;
 }
