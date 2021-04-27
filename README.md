@@ -24,7 +24,7 @@
 
 Склонировать проект на ПК:
 
-    git clone https://github.com/pavelcydep/mesto_pro11.git
+    git clone https://github.com/pavelcydep/servis-mesto-fetch.git
 
 Установить зависимости
 
