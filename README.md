@@ -4,7 +4,7 @@
      
   </p>
 <p align="center">
-   <img src="bloggif_608aa15964ac3.gif" width="400">
+   <img src="bloggif_608aa15964ac3.gif">
   </p>
 
 ## О сервисе Mesto
