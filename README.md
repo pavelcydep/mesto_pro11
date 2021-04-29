@@ -2,9 +2,10 @@
 <p align="center">
     <img src="https://res.cloudinary.com/prysya/image/upload/v1586434550/logo_bdsdvx.svg" width="400">
       <img src="bloggif_608aa15964ac3.gif" width="400">
-    ![](bloggif_608aa15964ac3.gif)
-</p>
-
+  </p>
+<p align="center">
+   <img src="bloggif_608aa15964ac3.gif" width="400">
+  </p>
 
 ## О сервисе Mesto
 
