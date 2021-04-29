@@ -2,9 +2,7 @@
 <p align="center">
     <img src="https://res.cloudinary.com/prysya/image/upload/v1586434550/logo_bdsdvx.svg" width="400">
 </p>
-<p style="background-color:green"> 
-    d      
-</p>
+
 
 ## О сервисе Mesto
 
