@@ -2,7 +2,7 @@
 <p align="center">
     <img src="https://res.cloudinary.com/prysya/image/upload/v1586434550/logo_bdsdvx.svg" width="400">
 </p>
-<div background = red>rrrr</div>
+<div style="background-color:red;">gggg</div>
 
 ## О сервисе Mesto
 
